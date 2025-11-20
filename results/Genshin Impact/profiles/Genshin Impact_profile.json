@@ -1,0 +1,66 @@
+{
+  "file": "Genshin Impact",
+  "n_rows": 22255,
+  "columns": {
+    "reviewId": {
+      "dtype": "text",
+      "non_null": 22255,
+      "unique": 22255,
+      "sample_values": [
+        "d3821eb7-de38-4697-a4df-0e6b708981ea",
+        "09e0ce5b-0770-489e-8c72-5e52dd003fed",
+        "17b15a33-d2ae-4c98-9a9b-cacc52e75ced",
+        "ad2b54b3-eae0-41d0-8bfa-2b7cba3ef171",
+        "fdfb62c8-deec-45cf-b479-192ec9aedf1d"
+      ]
+    },
+    "userName": {
+      "dtype": "categorical",
+      "non_null": 22255,
+      "unique": 21823,
+      "sample_values": [
+        "Amrita Das",
+        "newtie",
+        "dylan trenberth",
+        "Joseph Kreifels II",
+        "Anshul Kumar"
+      ]
+    },
+    "content": {
+      "dtype": "text",
+      "non_null": 22253,
+      "unique": 19491,
+      "sample_values": [
+        "good sab",
+        "Honestly it's amazing for open world exploration, building teams, and connecting with people. There's always tutorials on YT for quests you don't understand if you need it, and I do understand Honkais the favorite child, but you can actually dodge in genshin! :D I absolutely love the characters, each one has been thought over well and has a unique design",
+        "I've been having a lot of fun I like how the game treats its new players makes eazy to understand.",
+        "after 5 long years, they finally added controller support..... Domains are still locked to certain weekdays, and there's no flying like in Wuthering Waves. Go playing Wuthering Waves people",
+        "so I downloaded this game randomly and I was shocked after knowing that the size of game \ud83e\udd72"
+      ]
+    },
+    "score": {
+      "dtype": "numeric",
+      "non_null": 22255,
+      "unique": 5,
+      "sample_values": [
+        "5",
+        "5",
+        "5",
+        "3",
+        "2"
+      ]
+    },
+    "at": {
+      "dtype": "datetime",
+      "non_null": 22255,
+      "unique": 22222,
+      "sample_values": [
+        "2025-06-22 23:56:39",
+        "2025-06-22 23:50:10",
+        "2025-06-22 23:39:42",
+        "2025-06-22 23:26:44",
+        "2025-06-22 23:16:54"
+      ]
+    }
+  }
+}

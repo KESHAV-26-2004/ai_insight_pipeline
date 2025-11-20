@@ -1,0 +1,10 @@
+{
+  "file": "amazon_sales_2025_INR.csv",
+  "primary": "Total_Sales_INR",
+  "secondary": [
+    "Review_Rating"
+  ],
+  "type": "regression",
+  "auto_changes": [],
+  "needs_review": true
+}

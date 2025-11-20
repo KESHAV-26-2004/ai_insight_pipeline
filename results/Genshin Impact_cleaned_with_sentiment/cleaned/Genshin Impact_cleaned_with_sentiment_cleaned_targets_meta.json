@@ -1,0 +1,11 @@
+{
+  "file": "Genshin Impact_cleaned_with_sentiment_cleaned.csv",
+  "primary": "score",
+  "secondary": [
+    "content_sentiment"
+  ],
+  "type": "classification",
+  "title": "Product Review Analysis",
+  "auto_changes": [],
+  "needs_review": false
+}

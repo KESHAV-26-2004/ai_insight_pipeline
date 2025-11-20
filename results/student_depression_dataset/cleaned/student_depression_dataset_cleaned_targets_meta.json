@@ -1,0 +1,10 @@
+{
+  "file": "student_depression_dataset.csv",
+  "primary": "Depression",
+  "secondary": [
+    "CGPA"
+  ],
+  "type": "classification",
+  "auto_changes": [],
+  "needs_review": false
+}

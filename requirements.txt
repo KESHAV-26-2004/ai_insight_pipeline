@@ -1,0 +1,42 @@
+# === Core Data & Numerical ===
+pandas
+numpy
+scipy
+statsmodels
+
+# === Machine Learning / NLP ===
+scikit-learn
+torch
+transformers
+datasets
+
+# === Jupyter (optional but used during training) ===
+tqdm
+ipython
+jupyter
+
+# === Plotting ===
+matplotlib
+
+# === Report Generation ===
+python-docx
+reportlab
+
+# === Web App / Pipeline Runner ===
+streamlit
+
+# === Text Processing ===
+regex
+
+# === Gemini (Google Generative AI) ===
+google-generativeai
+
+# === HuggingFace / Tokenizers ===
+tokenizers
+
+# === Utilities ===
+pathlib
+python-dateutil
+
+# === Optional but recommended ===
+PyYAML

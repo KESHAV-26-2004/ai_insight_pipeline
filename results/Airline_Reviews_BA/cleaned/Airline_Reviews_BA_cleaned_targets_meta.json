@@ -1,0 +1,10 @@
+{
+  "file": "Airline_Reviews_BA.csv",
+  "primary": "Recommended",
+  "secondary": [
+    "Seat Type"
+  ],
+  "type": "classification",
+  "auto_changes": [],
+  "needs_review": false
+}

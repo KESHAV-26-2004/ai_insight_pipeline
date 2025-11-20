@@ -1,0 +1,22 @@
+[
+  {
+    "short": "Recommended increases with Ratings(10) (strong, anova_eta2, effect=0.55, p=0).",
+    "long": "A strong relationship was found between Recommended and Ratings(10) using anova_eta2 (effect=0.552, p=0, n=3862). This indicates that Recommended increases with Ratings(10).",
+    "action": "Consider prioritizing Recommended and Ratings(10) for interventions or further testing."
+  },
+  {
+    "short": "Recommended increases with Review (strong, anova_eta2, effect=0.47, p=0).",
+    "long": "A strong relationship was found between Recommended and Review using anova_eta2 (effect=0.470, p=0, n=3862). This indicates that Recommended increases with Review.",
+    "action": "Consider prioritizing Recommended and Review for interventions or further testing."
+  },
+  {
+    "short": "Recommended increases with Review Head (strong, anova_eta2, effect=0.31, p=7.1e-314).",
+    "long": "A strong relationship was found between Recommended and Review Head using anova_eta2 (effect=0.310, p=7.1e-314, n=3862). This indicates that Recommended increases with Review Head.",
+    "action": "Consider prioritizing Recommended and Review Head for interventions or further testing."
+  },
+  {
+    "short": "Recommended increases with Avg Sentiment All Textcols (strong, anova_eta2, effect=0.52, p=0).",
+    "long": "A strong relationship was found between Recommended and Avg Sentiment All Textcols using anova_eta2 (effect=0.517, p=0, n=3862). This indicates that Recommended increases with Avg Sentiment All Textcols.",
+    "action": "Consider prioritizing Recommended and Avg Sentiment All Textcols for interventions or further testing."
+  }
+]

@@ -1,0 +1,10 @@
+Top relations (final selected):
+1. Recommended ↔ Ratings(10) Z | method=anova_eta2 | effect=0.552 | p=0 | adj_p=nan
+2. Recommended ↔ Review Sentiment Num | method=anova_eta2 | effect=0.470 | p=0 | adj_p=nan
+3. Recommended ↔ Review Head Sentiment Num | method=anova_eta2 | effect=0.310 | p=7.1e-314 | adj_p=nan
+4. Recommended ↔ Avg Sentiment All Textcols | method=anova_eta2 | effect=0.517 | p=0 | adj_p=nan
+
+Notes:
+- Only high-quality relations (effect >= 0.15, adj_p <= 0.05, min_points = 50) are plotted.
+- Parent-level reporting: engineered columns are used for calculation but outputs reference original CSV column names.
+- Plots labels use prettified parent names (underscores removed, Title Case).

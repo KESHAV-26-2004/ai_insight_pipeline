@@ -1,0 +1,84 @@
+{
+  "numeric": {},
+  "categorical": {},
+  "sentiment": {
+    "sentiment_columns": [
+      "content_sentiment_num"
+    ],
+    "confidence_columns": [
+      "content_sentiment_confidence"
+    ],
+    "aggregations": [
+      "avg_sentiment_all_textcols"
+    ]
+  },
+  "text_cols": [
+    "content"
+  ],
+  "datetime_cols": [
+    "at"
+  ],
+  "column_relations": {
+    "content": [
+      "content_word_count",
+      "content_unique_ratio",
+      "content_has_url",
+      "content_has_emoji",
+      "content_upper_ratio",
+      "content_sentiment",
+      "content_sentiment_num",
+      "content_sentiment_confidence"
+    ],
+    "at": [
+      "at_year",
+      "at_month",
+      "at_day",
+      "at_hour",
+      "at_weekday",
+      "at_is_weekend"
+    ]
+  },
+  "derived_to_parent": {
+    "content_word_count": "content",
+    "content_unique_ratio": "content",
+    "content_has_url": "content",
+    "content_has_emoji": "content",
+    "content_upper_ratio": "content",
+    "content_sentiment": "content",
+    "content_sentiment_num": "content",
+    "content_sentiment_confidence": "content",
+    "at_year": "at",
+    "at_month": "at",
+    "at_day": "at",
+    "at_hour": "at",
+    "at_weekday": "at",
+    "at_is_weekend": "at"
+  },
+  "original_columns": [
+    "content",
+    "score",
+    "at",
+    "content_sentiment",
+    "content_sentiment_num",
+    "content_sentiment_confidence"
+  ],
+  "primary_target": "score",
+  "secondary_targets": [
+    "content_sentiment"
+  ],
+  "feature_columns": [
+    "content_word_count",
+    "content_unique_ratio",
+    "content_has_url",
+    "content_has_emoji",
+    "content_upper_ratio",
+    "at_year",
+    "at_month",
+    "at_day",
+    "at_hour",
+    "at_weekday",
+    "at_is_weekend",
+    "n_missing",
+    "n_text_cols_nonempty"
+  ]
+}

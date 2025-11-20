@@ -1,0 +1,68 @@
+# --------------------------
+# Python ignores
+# --------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual env
+venv/
+.env/
+
+# --------------------------
+# Jupyter Notebook
+# --------------------------
+.ipynb_checkpoints/
+
+# --------------------------
+# Project-specific
+# --------------------------
+
+# Do NOT upload datasets
+data/
+configs/
+
+# --------------------------
+# Sentiment Model Folder
+# --------------------------
+Sentiment/01_make_train_dataset.ipynb
+Sentiment/04_make_sentiment_train_dataset.ipynb
+Sentiment/06_apply_sentiment_to_csv.ipynb
+Sentiment/07_finetune_opinion_detector_with_time_data.ipynb
+Sentiment/detect_and_annotate_csv.ipynb
+Sentiment/opinion_detector_model/
+Sentiment/sentiment_model/
+Sentiment/results/
+
+# --------------------------
+# Title Model Folder
+# --------------------------
+title/model/
+
+app.py
+run_pipeline.py
+runner.ipynb
+pipeline/*
+!pipeline/*.py
+
+# --------------------------
+# HuggingFace global cache
+# --------------------------
+~/.cache/huggingface/
+huggingface/
+cache/
+
+# --------------------------
+# OS files
+# --------------------------
+.DS_Store
+Thumbs.db
+
+# --------------------------
+# Editor / IDE
+# --------------------------
+.vscode/
+.idea/
+*.swp

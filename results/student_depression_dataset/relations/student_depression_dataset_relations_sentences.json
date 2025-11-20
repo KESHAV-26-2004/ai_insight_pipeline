@@ -1,0 +1,22 @@
+[
+  {
+    "short": "Depression increases with Have You Ever Had Suicidal Thoughts ? (strong, spearman, effect=0.55, p=0).",
+    "long": "A strong relationship was found between Depression and Have You Ever Had Suicidal Thoughts ? using spearman (effect=0.546, p=0, n=27901). This indicates that Depression increases with Have You Ever Had Suicidal Thoughts ?.",
+    "action": "Consider prioritizing Depression and Have You Ever Had Suicidal Thoughts ? for interventions or further testing."
+  },
+  {
+    "short": "Depression increases with Academic Pressure (strong, spearman, effect=0.47, p=0).",
+    "long": "A strong relationship was found between Depression and Academic Pressure using spearman (effect=0.472, p=0, n=27901). This indicates that Depression increases with Academic Pressure.",
+    "action": "Consider prioritizing Depression and Academic Pressure for interventions or further testing."
+  },
+  {
+    "short": "Depression increases with Financial Stress (strong, spearman, effect=0.36, p=0).",
+    "long": "A strong relationship was found between Depression and Financial Stress using spearman (effect=0.363, p=0, n=27901). This indicates that Depression increases with Financial Stress.",
+    "action": "Consider prioritizing Depression and Financial Stress for interventions or further testing."
+  },
+  {
+    "short": "Depression decreases with Age (moderate, spearman, effect=-0.23, p=0).",
+    "long": "A moderate relationship was found between Depression and Age using spearman (effect=-0.225, p=0, n=27901). This indicates that Depression decreases with Age.",
+    "action": "Investigate Depression vs Age further \u2014 they show a moderate relationship."
+  }
+]

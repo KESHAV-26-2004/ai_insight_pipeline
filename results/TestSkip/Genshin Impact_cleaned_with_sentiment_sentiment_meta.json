@@ -1,0 +1,27 @@
+{
+  "file": "Genshin Impact_cleaned_with_sentiment",
+  "candidates": [],
+  "analyzed": [],
+  "skipped": [],
+  "existing_sentiment": [
+    {
+      "column": "content_sentiment",
+      "normalized": [
+        "content_sentiment_sentiment",
+        "content_sentiment_sentiment_num"
+      ],
+      "kind": "text"
+    },
+    {
+      "column": "content_sentiment_num",
+      "normalized": [
+        "content_sentiment_num_sentiment",
+        "content_sentiment_num_sentiment_num"
+      ],
+      "kind": "numeric"
+    }
+  ],
+  "derived_columns": [],
+  "note": "existing_sentiment_used",
+  "runtime_sec": 0.28
+}

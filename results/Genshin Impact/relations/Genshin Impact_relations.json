@@ -1,0 +1,20 @@
+[
+  {
+    "parent_a": "score",
+    "parent_b": "content",
+    "feature_a": "score",
+    "feature_b": "content_sentiment_num",
+    "method": "spearman",
+    "effect_size": 0.6741883168838336,
+    "p_value": 0.0,
+    "n": 22255,
+    "direction": "positive",
+    "notes": null,
+    "priority_weight": 3,
+    "_score": 2.6967532675353345,
+    "adjusted_p_value": 0.0,
+    "significant_fdr": true,
+    "rank_score": 2.6967532675353345,
+    "plot": "plots\\relation_1.png"
+  }
+]

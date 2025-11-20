@@ -1,0 +1,174 @@
+{
+  "file": "amazon_sales_2025_INR",
+  "n_rows": 15000,
+  "columns": {
+    "Order_ID": {
+      "dtype": "categorical",
+      "non_null": 15000,
+      "unique": 15000,
+      "sample_values": [
+        "ORD100000",
+        "ORD100001",
+        "ORD100002",
+        "ORD100003",
+        "ORD100004"
+      ]
+    },
+    "Date": {
+      "dtype": "datetime",
+      "non_null": 15000,
+      "unique": 365,
+      "sample_values": [
+        "2025-01-25",
+        "2025-08-28",
+        "2025-02-27",
+        "2025-02-24",
+        "2025-06-15"
+      ]
+    },
+    "Customer_ID": {
+      "dtype": "categorical",
+      "non_null": 15000,
+      "unique": 7259,
+      "sample_values": [
+        "CUST2796",
+        "CUST9669",
+        "CUST5808",
+        "CUST5889",
+        "CUST9005"
+      ]
+    },
+    "Product_Category": {
+      "dtype": "categorical",
+      "non_null": 15000,
+      "unique": 5,
+      "sample_values": [
+        "Home & Kitchen",
+        "Beauty",
+        "Electronics",
+        "Electronics",
+        "Clothing"
+      ]
+    },
+    "Product_Name": {
+      "dtype": "categorical",
+      "non_null": 15000,
+      "unique": 25,
+      "sample_values": [
+        "Cookware Set",
+        "Hair Dryer",
+        "Tablet",
+        "Headphones",
+        "Saree"
+      ]
+    },
+    "Quantity": {
+      "dtype": "numeric",
+      "non_null": 15000,
+      "unique": 5,
+      "sample_values": [
+        "2",
+        "1",
+        "3",
+        "5",
+        "5"
+      ]
+    },
+    "Unit_Price_INR": {
+      "dtype": "numeric",
+      "non_null": 15000,
+      "unique": 14981,
+      "sample_values": [
+        "25574.41",
+        "19361.41",
+        "38476.22",
+        "38145.72",
+        "45940.98"
+      ]
+    },
+    "Total_Sales_INR": {
+      "dtype": "numeric",
+      "non_null": 15000,
+      "unique": 14988,
+      "sample_values": [
+        "51148.82",
+        "19361.41",
+        "115428.66",
+        "190728.6",
+        "229704.9"
+      ]
+    },
+    "Payment_Method": {
+      "dtype": "categorical",
+      "non_null": 15000,
+      "unique": 4,
+      "sample_values": [
+        "Credit Card",
+        "Debit Card",
+        "Cash on Delivery",
+        "Credit Card",
+        "UPI"
+      ]
+    },
+    "Delivery_Status": {
+      "dtype": "categorical",
+      "non_null": 15000,
+      "unique": 3,
+      "sample_values": [
+        "Returned",
+        "Returned",
+        "Delivered",
+        "Delivered",
+        "Delivered"
+      ]
+    },
+    "Review_Rating": {
+      "dtype": "numeric",
+      "non_null": 15000,
+      "unique": 5,
+      "sample_values": [
+        "1",
+        "5",
+        "3",
+        "5",
+        "5"
+      ]
+    },
+    "Review_Text": {
+      "dtype": "categorical",
+      "non_null": 15000,
+      "unique": 25,
+      "sample_values": [
+        "Waste of money",
+        "Excellent product!",
+        "Fair deal",
+        "Highly recommend!",
+        "Highly recommend!"
+      ]
+    },
+    "State": {
+      "dtype": "categorical",
+      "non_null": 15000,
+      "unique": 28,
+      "sample_values": [
+        "Sikkim",
+        "Telangana",
+        "Nagaland",
+        "Assam",
+        "Odisha"
+      ]
+    },
+    "Country": {
+      "dtype": "categorical",
+      "non_null": 15000,
+      "unique": 1,
+      "sample_values": [
+        "India",
+        "India",
+        "India",
+        "India",
+        "India"
+      ]
+    }
+  }
+}

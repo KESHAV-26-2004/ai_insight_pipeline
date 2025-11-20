@@ -1,0 +1,6 @@
+{
+    "original_csv": "C:\\Users\\keshu\\CSET 346\\Project\\NLP\\Implement\\data\\all_csv\\Airline_Reviews_BA.csv",
+    "dataset_name": "Airline_Reviews_BA",
+    "generated_title": "Comprehensive Dataset Trend and Pattern Evaluation",
+    "model_used": "./title_model"
+}

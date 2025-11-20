@@ -1,0 +1,201 @@
+{
+  "numeric": {
+    "Quantity": {
+      "mean": 2.9846666666666666,
+      "std": 1.4228257744483743,
+      "filled": true
+    }
+  },
+  "categorical": {
+    "Product_Category": {
+      "type": "label",
+      "mapping": {
+        "Beauty": 0,
+        "Books": 1,
+        "Clothing": 2,
+        "Electronics": 3,
+        "Home & Kitchen": 4
+      }
+    },
+    "Product_Name": {
+      "type": "label",
+      "mapping": {
+        "Air Fryer": 0,
+        "Biography": 1,
+        "Children's Book": 2,
+        "Comics": 3,
+        "Cookware Set": 4,
+        "Face Cream": 5,
+        "Fiction Novel": 6,
+        "Hair Dryer": 7,
+        "Headphones": 8,
+        "Jacket": 9,
+        "Jeans": 10,
+        "Laptop": 11,
+        "Lipstick": 12,
+        "Mixer Grinder": 13,
+        "Perfume": 14,
+        "Saree": 15,
+        "Science Textbook": 16,
+        "Shampoo": 17,
+        "Smartphone": 18,
+        "Smartwatch": 19,
+        "Sneakers": 20,
+        "T-Shirt": 21,
+        "Tablet": 22,
+        "Vacuum Cleaner": 23,
+        "Water Purifier": 24
+      }
+    },
+    "Payment_Method": {
+      "type": "label",
+      "mapping": {
+        "Cash on Delivery": 0,
+        "Credit Card": 1,
+        "Debit Card": 2,
+        "UPI": 3
+      }
+    },
+    "Review_Text": {
+      "type": "label",
+      "mapping": {
+        "Average": 0,
+        "Could be better": 1,
+        "Defective item": 2,
+        "Disappointed": 3,
+        "Excellent product!": 4,
+        "Fair deal": 5,
+        "Fantastic quality!": 6,
+        "Good quality": 7,
+        "Highly recommend!": 8,
+        "Loved it!": 9,
+        "Never buying again": 10,
+        "Not bad": 11,
+        "Not satisfied": 12,
+        "Okay product": 13,
+        "Poor packaging": 14,
+        "Pretty decent": 15,
+        "Product not as expected": 16,
+        "Quality could improve": 17,
+        "Satisfied with the product": 18,
+        "Terrible experience": 19,
+        "Value for money": 20,
+        "Very bad product": 21,
+        "Waste of money": 22,
+        "Worth every rupee!": 23,
+        "Would buy again": 24
+      }
+    },
+    "State": {
+      "type": "label",
+      "mapping": {
+        "Andhra Pradesh": 0,
+        "Arunachal Pradesh": 1,
+        "Assam": 2,
+        "Bihar": 3,
+        "Chhattisgarh": 4,
+        "Goa": 5,
+        "Gujarat": 6,
+        "Haryana": 7,
+        "Himachal Pradesh": 8,
+        "Jharkhand": 9,
+        "Karnataka": 10,
+        "Kerala": 11,
+        "Madhya Pradesh": 12,
+        "Maharashtra": 13,
+        "Manipur": 14,
+        "Meghalaya": 15,
+        "Mizoram": 16,
+        "Nagaland": 17,
+        "Odisha": 18,
+        "Punjab": 19,
+        "Rajasthan": 20,
+        "Sikkim": 21,
+        "Tamil Nadu": 22,
+        "Telangana": 23,
+        "Tripura": 24,
+        "Uttar Pradesh": 25,
+        "Uttarakhand": 26,
+        "West Bengal": 27
+      }
+    }
+  },
+  "sentiment": {
+    "sentiment_columns": [
+      "Review_Text_sentiment_num"
+    ],
+    "confidence_columns": [
+      "Review_Text_sentiment_confidence"
+    ],
+    "aggregations": [
+      "avg_sentiment_all_textcols"
+    ]
+  },
+  "text_cols": [],
+  "datetime_cols": [],
+  "column_relations": {
+    "Quantity": [
+      "Quantity_z"
+    ],
+    "Product_Category": [
+      "Product_Category_encoded"
+    ],
+    "Product_Name": [
+      "Product_Name_encoded"
+    ],
+    "Payment_Method": [
+      "Payment_Method_encoded"
+    ],
+    "Review_Text": [
+      "Review_Text_encoded",
+      "Review_Text_sentiment",
+      "Review_Text_sentiment_num",
+      "Review_Text_sentiment_confidence"
+    ],
+    "State": [
+      "State_encoded"
+    ]
+  },
+  "derived_to_parent": {
+    "Quantity_z": "Quantity",
+    "Product_Category_encoded": "Product_Category",
+    "Product_Name_encoded": "Product_Name",
+    "Payment_Method_encoded": "Payment_Method",
+    "Review_Text_encoded": "Review_Text",
+    "Review_Text_sentiment": "Review_Text",
+    "Review_Text_sentiment_num": "Review_Text",
+    "Review_Text_sentiment_confidence": "Review_Text",
+    "State_encoded": "State"
+  },
+  "original_columns": [
+    "Order_ID",
+    "Date",
+    "Customer_ID",
+    "Product_Category",
+    "Product_Name",
+    "Quantity",
+    "Unit_Price_INR",
+    "Total_Sales_INR",
+    "Payment_Method",
+    "Delivery_Status",
+    "Review_Rating",
+    "Review_Text",
+    "State",
+    "Country"
+  ],
+  "primary_target": "Total_Sales_INR",
+  "secondary_targets": [
+    "Review_Rating"
+  ],
+  "feature_columns": [
+    "Review_Text_sentiment",
+    "Review_Text_sentiment_num",
+    "Review_Text_sentiment_confidence",
+    "Quantity_z",
+    "Product_Category_encoded",
+    "Product_Name_encoded",
+    "Payment_Method_encoded",
+    "Review_Text_encoded",
+    "State_encoded"
+  ]
+}

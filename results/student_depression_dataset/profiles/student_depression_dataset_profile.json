@@ -1,0 +1,222 @@
+{
+  "file": "student_depression_dataset",
+  "n_rows": 27901,
+  "columns": {
+    "id": {
+      "dtype": "numeric",
+      "non_null": 27901,
+      "unique": 27901,
+      "sample_values": [
+        "2",
+        "8",
+        "26",
+        "30",
+        "32"
+      ]
+    },
+    "Gender": {
+      "dtype": "categorical",
+      "non_null": 27901,
+      "unique": 2,
+      "sample_values": [
+        "Male",
+        "Female",
+        "Male",
+        "Female",
+        "Female"
+      ]
+    },
+    "Age": {
+      "dtype": "numeric",
+      "non_null": 27901,
+      "unique": 34,
+      "sample_values": [
+        "33.0",
+        "24.0",
+        "31.0",
+        "28.0",
+        "25.0"
+      ]
+    },
+    "City": {
+      "dtype": "categorical",
+      "non_null": 27901,
+      "unique": 52,
+      "sample_values": [
+        "Visakhapatnam",
+        "Bangalore",
+        "Srinagar",
+        "Varanasi",
+        "Jaipur"
+      ]
+    },
+    "Profession": {
+      "dtype": "categorical",
+      "non_null": 27901,
+      "unique": 14,
+      "sample_values": [
+        "Student",
+        "Student",
+        "Student",
+        "Student",
+        "Student"
+      ]
+    },
+    "Academic Pressure": {
+      "dtype": "numeric",
+      "non_null": 27901,
+      "unique": 6,
+      "sample_values": [
+        "5.0",
+        "2.0",
+        "3.0",
+        "3.0",
+        "4.0"
+      ]
+    },
+    "Work Pressure": {
+      "dtype": "numeric",
+      "non_null": 27901,
+      "unique": 3,
+      "sample_values": [
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0"
+      ]
+    },
+    "CGPA": {
+      "dtype": "numeric",
+      "non_null": 27901,
+      "unique": 332,
+      "sample_values": [
+        "8.97",
+        "5.9",
+        "7.03",
+        "5.59",
+        "8.13"
+      ]
+    },
+    "Study Satisfaction": {
+      "dtype": "numeric",
+      "non_null": 27901,
+      "unique": 6,
+      "sample_values": [
+        "2.0",
+        "5.0",
+        "5.0",
+        "2.0",
+        "3.0"
+      ]
+    },
+    "Job Satisfaction": {
+      "dtype": "numeric",
+      "non_null": 27901,
+      "unique": 5,
+      "sample_values": [
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0",
+        "0.0"
+      ]
+    },
+    "Sleep Duration": {
+      "dtype": "categorical",
+      "non_null": 27901,
+      "unique": 5,
+      "sample_values": [
+        "'5-6 hours'",
+        "'5-6 hours'",
+        "'Less than 5 hours'",
+        "'7-8 hours'",
+        "'5-6 hours'"
+      ]
+    },
+    "Dietary Habits": {
+      "dtype": "categorical",
+      "non_null": 27901,
+      "unique": 4,
+      "sample_values": [
+        "Healthy",
+        "Moderate",
+        "Healthy",
+        "Moderate",
+        "Moderate"
+      ]
+    },
+    "Degree": {
+      "dtype": "categorical",
+      "non_null": 27901,
+      "unique": 28,
+      "sample_values": [
+        "B.Pharm",
+        "BSc",
+        "BA",
+        "BCA",
+        "M.Tech"
+      ]
+    },
+    "Have you ever had suicidal thoughts ?": {
+      "dtype": "categorical",
+      "non_null": 27901,
+      "unique": 2,
+      "sample_values": [
+        "Yes",
+        "No",
+        "No",
+        "Yes",
+        "Yes"
+      ]
+    },
+    "Work/Study Hours": {
+      "dtype": "numeric",
+      "non_null": 27901,
+      "unique": 13,
+      "sample_values": [
+        "3.0",
+        "3.0",
+        "9.0",
+        "4.0",
+        "1.0"
+      ]
+    },
+    "Financial Stress": {
+      "dtype": "categorical",
+      "non_null": 27901,
+      "unique": 6,
+      "sample_values": [
+        "1.0",
+        "2.0",
+        "1.0",
+        "5.0",
+        "1.0"
+      ]
+    },
+    "Family History of Mental Illness": {
+      "dtype": "categorical",
+      "non_null": 27901,
+      "unique": 2,
+      "sample_values": [
+        "No",
+        "Yes",
+        "Yes",
+        "Yes",
+        "No"
+      ]
+    },
+    "Depression": {
+      "dtype": "numeric",
+      "non_null": 27901,
+      "unique": 2,
+      "sample_values": [
+        "1",
+        "0",
+        "0",
+        "1",
+        "0"
+      ]
+    }
+  }
+}

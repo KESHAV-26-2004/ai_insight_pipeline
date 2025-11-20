@@ -1,0 +1,29 @@
+{
+  "file": "student_depression_dataset_cleaned",
+  "candidates": [
+    {
+      "column": "Sleep Duration",
+      "avg_words": 3.128,
+      "unique_word_ratio": 0.005115089514066497,
+      "keyword_signal": false,
+      "non_null_count": 27901
+    }
+  ],
+  "analyzed": [
+    {
+      "column": "Sleep Duration",
+      "opinion_frac": 0.564,
+      "mean_conf": 0.8652253150939941,
+      "rows_processed": 27901,
+      "added_columns": [
+        "Sleep Duration_sentiment",
+        "Sleep Duration_sentiment_num",
+        "Sleep Duration_sentiment_confidence"
+      ]
+    }
+  ],
+  "skipped": [],
+  "existing_sentiment": [],
+  "derived_columns": [],
+  "runtime_sec": 32.03
+}

@@ -1,0 +1,10 @@
+Top relations (final selected):
+1. Depression ↔ Have You Ever Had Suicidal Thoughts ? Encoded | method=spearman | effect=0.546 | p=0 | adj_p=0
+2. Depression ↔ Academic Pressure Z | method=spearman | effect=0.472 | p=0 | adj_p=0
+3. Depression ↔ Financial Stress Encoded | method=spearman | effect=0.363 | p=0 | adj_p=0
+4. Depression ↔ Age Z | method=spearman | effect=-0.225 | p=0 | adj_p=0
+
+Notes:
+- Only high-quality relations (effect >= 0.15, adj_p <= 0.05, min_points = 50) are plotted.
+- Parent-level reporting: engineered columns are used for calculation but outputs reference original CSV column names.
+- Plots labels use prettified parent names (underscores removed, Title Case).

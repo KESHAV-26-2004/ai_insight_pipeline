@@ -1,0 +1,29 @@
+{
+  "file": "amazon_sales_2025_INR_cleaned",
+  "candidates": [
+    {
+      "column": "Review_Text",
+      "avg_words": 2.408,
+      "unique_word_ratio": 0.044850498338870434,
+      "keyword_signal": true,
+      "non_null_count": 15000
+    }
+  ],
+  "analyzed": [
+    {
+      "column": "Review_Text",
+      "opinion_frac": 0.818,
+      "mean_conf": 0.9985205356241147,
+      "rows_processed": 15000,
+      "added_columns": [
+        "Review_Text_sentiment",
+        "Review_Text_sentiment_num",
+        "Review_Text_sentiment_confidence"
+      ]
+    }
+  ],
+  "skipped": [],
+  "existing_sentiment": [],
+  "derived_columns": [],
+  "runtime_sec": 8.01
+}

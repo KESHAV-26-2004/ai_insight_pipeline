@@ -1,0 +1,78 @@
+{
+  "file": "Genshin Impact_cleaned_with_sentiment",
+  "n_rows": 22255,
+  "columns": {
+    "content": {
+      "dtype": "text",
+      "non_null": 22253,
+      "unique": 19491,
+      "sample_values": [
+        "good sab",
+        "Honestly it's amazing for open world exploration, building teams, and connecting with people. There's always tutorials on YT for quests you don't understand if you need it, and I do understand Honkais the favorite child, but you can actually dodge in genshin! :D I absolutely love the characters, each one has been thought over well and has a unique design",
+        "I've been having a lot of fun I like how the game treats its new players makes eazy to understand.",
+        "after 5 long years, they finally added controller support..... Domains are still locked to certain weekdays, and there's no flying like in Wuthering Waves. Go playing Wuthering Waves people",
+        "so I downloaded this game randomly and I was shocked after knowing that the size of game \ud83e\udd72"
+      ]
+    },
+    "score": {
+      "dtype": "numeric",
+      "non_null": 22255,
+      "unique": 5,
+      "sample_values": [
+        "5",
+        "5",
+        "5",
+        "3",
+        "2"
+      ]
+    },
+    "at": {
+      "dtype": "datetime",
+      "non_null": 22255,
+      "unique": 22222,
+      "sample_values": [
+        "2025-06-22 23:56:39",
+        "2025-06-22 23:50:10",
+        "2025-06-22 23:39:42",
+        "2025-06-22 23:26:44",
+        "2025-06-22 23:16:54"
+      ]
+    },
+    "content_sentiment": {
+      "dtype": "categorical",
+      "non_null": 22255,
+      "unique": 3,
+      "sample_values": [
+        "positive",
+        "positive",
+        "positive",
+        "positive",
+        "positive"
+      ]
+    },
+    "content_sentiment_num": {
+      "dtype": "numeric",
+      "non_null": 22255,
+      "unique": 3,
+      "sample_values": [
+        "2",
+        "2",
+        "2",
+        "2",
+        "2"
+      ]
+    },
+    "content_sentiment_confidence": {
+      "dtype": "numeric",
+      "non_null": 22255,
+      "unique": 18142,
+      "sample_values": [
+        "0.9435539841651917",
+        "0.9909913539886476",
+        "0.9472687840461732",
+        "0.8805308938026428",
+        "0.6523823142051697"
+      ]
+    }
+  }
+}

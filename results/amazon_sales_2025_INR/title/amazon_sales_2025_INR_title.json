@@ -1,0 +1,6 @@
+{
+    "original_csv": "C:\\Users\\keshu\\CSET 346\\Project\\NLP\\Implement\\data\\all_csv/amazon_sales_2025_INR.csv",
+    "dataset_name": "amazon_sales_2025_INR",
+    "generated_title": "E-Commerce Product Performance and Customer Purchasing Behavior Report",
+    "model_used": "./title_model"
+}

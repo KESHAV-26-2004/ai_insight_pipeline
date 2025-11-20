@@ -1,0 +1,6 @@
+{
+    "original_csv": "./data/all_csv/Genshin Impact.csv",
+    "dataset_name": "Genshin Impact",
+    "generated_title": "Comprehensive Dataset Trend and Pattern Evaluation",
+    "model_used": "./title_model"
+}

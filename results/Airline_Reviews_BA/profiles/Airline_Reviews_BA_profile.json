@@ -1,0 +1,108 @@
+{
+  "file": "Airline_Reviews_BA",
+  "n_rows": 3862,
+  "columns": {
+    "Id": {
+      "dtype": "numeric",
+      "non_null": 3862,
+      "unique": 3862,
+      "sample_values": [
+        "2477",
+        "2690",
+        "3015",
+        "3996",
+        "1942"
+      ]
+    },
+    "Customer Name": {
+      "dtype": "categorical",
+      "non_null": 3862,
+      "unique": 3028,
+      "sample_values": [
+        "c haddei",
+        "thomas wilson",
+        "stephen cooper",
+        "s grimsditch",
+        "mark simons"
+      ]
+    },
+    "Review Head": {
+      "dtype": "text",
+      "non_null": 3862,
+      "unique": 2806,
+      "sample_values": [
+        "seats are super uncomfortable",
+        "very disappointed",
+        "happily recommend and use ba",
+        "cannot get compensation for our flight",
+        "crew very friendly and attentive"
+      ]
+    },
+    "Review": {
+      "dtype": "text",
+      "non_null": 3862,
+      "unique": 3853,
+      "sample_values": [
+        "horrible service from boarding to landing i flew from london to marrakech and was very disappointed with the arrangement for boarding my food is horrible the staff are arrogant to me and the seats are super uncomfortable for a 3h40min flight business class today taking the flight from marrakech to london i do not recommend",
+        "my wife and i are very disappointed with flying on british airways our flight on 912 was cancelled while all other airlines were flying in addition our seats changed multiple times without any explanation the people working were very rude and not at all customer oriented",
+        "we flew ba between heathrow and berlin one way connection our experience with ba ground staff at heathrow was very good friendly and helpful at check in and baggage drop off the crew on our flight were also very good captain provided some general information and welcoming in a suitable casual but efficient way flight stewards were also very friendly and handed out some water and small snack chocolate bar unexpected on a 1 hr 20 min flight seating was typical for class of aircraft and ticket cleanliness was not optimal and could be improved from memory a slightly delayed departure from heathrow which was slightly reduced on arrival at berlin this was not an issue for us as berlin was our destination with no connecting concerns our baggage arrived safely at berlin i understand ba has had some very negative reviews by customers but our experience on this occasion was very positive and would happily recommend and use ba",
+        "absolutely disgusted with ba our flights were cancelled on 1 may by ba even though the flight still departed we had a connecting flight from manchester to heathrow which was cancelled due to weather so could not get compensation for that flight but now it turns out we cannot get compensation for our flight to seattle either even though ba actually cancelled it for us i will never fly with them again",
+        "took a trip to nashville with my wife for a leisure break arrived at t5 and directed to the club world check in zone to the left of the terminal zone seemed way too small for the number of passengers and the check in process was painfully slow queues for non premium cabins seemed to be much more effectively managed had a bite to eat at the departures lounge plenty of food options even though it was very busy flight departed from the furthest away satellite gate in c annex boarding was managed efficiently i was in seat 4a in the club suites section lots of space and comfortable crew were  40 on average and very friendly and attentive i chose a salmon dish and was glad i was in 3a as they had run out by row 4 entertainment was a little disappointing in terms of latest release movies meal prior to landing was not to my taste so i skipped it flight landed right on schedule so no complaints on that basis"
+      ]
+    },
+    "Date": {
+      "dtype": "categorical",
+      "non_null": 3862,
+      "unique": 1942,
+      "sample_values": [
+        "22nd September 2024",
+        "13th September 2024",
+        "13th September 2024",
+        "13th September 2024",
+        "11th September 2024"
+      ]
+    },
+    "Airport Name": {
+      "dtype": "numeric",
+      "non_null": 0,
+      "unique": 0,
+      "sample_values": []
+    },
+    "Seat Type": {
+      "dtype": "categorical",
+      "non_null": 3860,
+      "unique": 4,
+      "sample_values": [
+        "Business Class",
+        "Economy Class",
+        "Economy Class",
+        "Economy Class",
+        "Business Class"
+      ]
+    },
+    "Ratings(10)": {
+      "dtype": "numeric",
+      "non_null": 3857,
+      "unique": 10,
+      "sample_values": [
+        "1.0",
+        "1.0",
+        "8.0",
+        "1.0",
+        "8.0"
+      ]
+    },
+    "Recommended": {
+      "dtype": "categorical",
+      "non_null": 3862,
+      "unique": 2,
+      "sample_values": [
+        "no",
+        "no",
+        "yes",
+        "no",
+        "yes"
+      ]
+    }
+  }
+}

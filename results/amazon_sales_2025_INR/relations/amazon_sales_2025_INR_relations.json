@@ -1,0 +1,20 @@
+[
+  {
+    "parent_a": "Review_Rating",
+    "parent_b": "Review_Text",
+    "feature_a": "Review_Rating",
+    "feature_b": "Review_Text_sentiment_num",
+    "method": "spearman",
+    "effect_size": 0.8109927515585605,
+    "p_value": 0.0,
+    "n": 15000,
+    "direction": "positive",
+    "notes": null,
+    "priority_weight": 2,
+    "_score": 2.4329782546756817,
+    "adjusted_p_value": 0.0,
+    "significant_fdr": true,
+    "rank_score": 2.4329782546756817,
+    "plot": "plots\\relation_1.png"
+  }
+]

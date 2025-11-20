@@ -1,0 +1,112 @@
+{
+  "numeric": {
+    "Ratings(10)": {
+      "mean": 4.696012428793371,
+      "std": 3.1743402135891787,
+      "filled": true
+    }
+  },
+  "categorical": {
+    "Customer Name": {
+      "type": "freq",
+      "mapping_size": 3028
+    },
+    "Date": {
+      "type": "freq",
+      "mapping_size": 1942
+    }
+  },
+  "sentiment": {
+    "sentiment_columns": [
+      "Review Head_sentiment_num",
+      "Review_sentiment_num"
+    ],
+    "confidence_columns": [
+      "Review Head_sentiment_confidence",
+      "Review_sentiment_confidence"
+    ],
+    "aggregations": [
+      "avg_sentiment_all_textcols"
+    ]
+  },
+  "text_cols": [
+    "Review Head",
+    "Review"
+  ],
+  "datetime_cols": [],
+  "column_relations": {
+    "Review Head": [
+      "Review Head_word_count",
+      "Review Head_unique_ratio",
+      "Review Head_sentiment",
+      "Review Head_sentiment_num",
+      "Review Head_sentiment_confidence"
+    ],
+    "Review": [
+      "Review_word_count",
+      "Review_unique_ratio",
+      "Review_has_url",
+      "Review_sentiment",
+      "Review_sentiment_num",
+      "Review_sentiment_confidence"
+    ],
+    "Ratings(10)": [
+      "Ratings(10)_z"
+    ],
+    "Customer Name": [
+      "Customer Name_freq"
+    ],
+    "Date": [
+      "Date_freq"
+    ]
+  },
+  "derived_to_parent": {
+    "Review Head_word_count": "Review Head",
+    "Review Head_unique_ratio": "Review Head",
+    "Review Head_sentiment": "Review Head",
+    "Review Head_sentiment_num": "Review Head",
+    "Review Head_sentiment_confidence": "Review Head",
+    "Review_word_count": "Review",
+    "Review_unique_ratio": "Review",
+    "Review_has_url": "Review",
+    "Review_sentiment": "Review",
+    "Review_sentiment_num": "Review",
+    "Review_sentiment_confidence": "Review",
+    "Ratings(10)_z": "Ratings(10)",
+    "Customer Name_freq": "Customer Name",
+    "Date_freq": "Date"
+  },
+  "original_columns": [
+    "Id",
+    "Customer Name",
+    "Review Head",
+    "Review",
+    "Date",
+    "Airport Name",
+    "Seat Type",
+    "Ratings(10)",
+    "Recommended"
+  ],
+  "primary_target": "Recommended",
+  "secondary_targets": [
+    "Seat Type"
+  ],
+  "feature_columns": [
+    "Review Head_sentiment",
+    "Review Head_sentiment_num",
+    "Review Head_sentiment_confidence",
+    "Review_sentiment",
+    "Review_sentiment_num",
+    "Review_sentiment_confidence",
+    "Ratings(10)_z",
+    "Customer Name_freq",
+    "Date_freq",
+    "Review Head_word_count",
+    "Review Head_unique_ratio",
+    "Review_word_count",
+    "Review_unique_ratio",
+    "Review_has_url",
+    "avg_sentiment_all_textcols",
+    "n_missing"
+  ]
+}

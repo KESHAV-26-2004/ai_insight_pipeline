@@ -1,0 +1,250 @@
+{
+  "numeric": {
+    "Age": {
+      "mean": 25.82230027597577,
+      "std": 4.90568744892443,
+      "filled": true
+    },
+    "Academic Pressure": {
+      "mean": 3.1412135765743163,
+      "std": 1.3814648413276254,
+      "filled": true
+    },
+    "Work Pressure": {
+      "mean": 0.00043009211139385684,
+      "std": 0.043992032063926795,
+      "filled": true
+    },
+    "Study Satisfaction": {
+      "mean": 2.943837138453819,
+      "std": 1.361147955267022,
+      "filled": true
+    },
+    "Job Satisfaction": {
+      "mean": 0.0006809791763736067,
+      "std": 0.044394396218617196,
+      "filled": true
+    },
+    "Work/Study Hours": {
+      "mean": 7.156983620658758,
+      "std": 3.707642072778702,
+      "filled": true
+    }
+  },
+  "categorical": {
+    "Gender": {
+      "type": "label",
+      "mapping": {
+        "Female": 0,
+        "Male": 1
+      }
+    },
+    "City": {
+      "type": "freq",
+      "mapping_size": 52
+    },
+    "Profession": {
+      "type": "label",
+      "mapping": {
+        "'Civil Engineer'": 0,
+        "'Content Writer'": 1,
+        "'Digital Marketer'": 2,
+        "'Educational Consultant'": 3,
+        "'UX/UI Designer'": 4,
+        "Architect": 5,
+        "Chef": 6,
+        "Doctor": 7,
+        "Entrepreneur": 8,
+        "Lawyer": 9,
+        "Manager": 10,
+        "Pharmacist": 11,
+        "Student": 12,
+        "Teacher": 13
+      }
+    },
+    "Sleep Duration": {
+      "type": "label",
+      "mapping": {
+        "'5-6 hours'": 0,
+        "'7-8 hours'": 1,
+        "'Less than 5 hours'": 2,
+        "'More than 8 hours'": 3,
+        "Others": 4
+      }
+    },
+    "Degree": {
+      "type": "label",
+      "mapping": {
+        "'Class 12'": 0,
+        "B.Arch": 1,
+        "B.Com": 2,
+        "B.Ed": 3,
+        "B.Pharm": 4,
+        "B.Tech": 5,
+        "BA": 6,
+        "BBA": 7,
+        "BCA": 8,
+        "BE": 9,
+        "BHM": 10,
+        "BSc": 11,
+        "LLB": 12,
+        "LLM": 13,
+        "M.Com": 14,
+        "M.Ed": 15,
+        "M.Pharm": 16,
+        "M.Tech": 17,
+        "MA": 18,
+        "MBA": 19,
+        "MBBS": 20,
+        "MCA": 21,
+        "MD": 22,
+        "ME": 23,
+        "MHM": 24,
+        "MSc": 25,
+        "Others": 26,
+        "PhD": 27
+      }
+    },
+    "Have you ever had suicidal thoughts ?": {
+      "type": "label",
+      "mapping": {
+        "No": 0,
+        "Yes": 1
+      }
+    },
+    "Financial Stress": {
+      "type": "label",
+      "mapping": {
+        "1.0": 0,
+        "2.0": 1,
+        "3.0": 2,
+        "4.0": 3,
+        "5.0": 4,
+        "?": 5
+      }
+    },
+    "Family History of Mental Illness": {
+      "type": "label",
+      "mapping": {
+        "No": 0,
+        "Yes": 1
+      }
+    }
+  },
+  "sentiment": {
+    "sentiment_columns": [
+      "Sleep Duration_sentiment_num"
+    ],
+    "confidence_columns": [
+      "Sleep Duration_sentiment_confidence"
+    ],
+    "aggregations": [
+      "avg_sentiment_all_textcols"
+    ]
+  },
+  "text_cols": [],
+  "datetime_cols": [],
+  "column_relations": {
+    "Age": [
+      "Age_z"
+    ],
+    "Academic Pressure": [
+      "Academic Pressure_z"
+    ],
+    "Work Pressure": [
+      "Work Pressure_z"
+    ],
+    "Study Satisfaction": [
+      "Study Satisfaction_z"
+    ],
+    "Job Satisfaction": [
+      "Job Satisfaction_z"
+    ],
+    "Work/Study Hours": [
+      "Work/Study Hours_z"
+    ],
+    "Gender": [
+      "Gender_encoded"
+    ],
+    "City": [
+      "City_freq"
+    ],
+    "Profession": [
+      "Profession_encoded"
+    ],
+    "Sleep Duration": [
+      "Sleep Duration_encoded",
+      "Sleep Duration_sentiment_confidence"
+    ],
+    "Degree": [
+      "Degree_encoded"
+    ],
+    "Have you ever had suicidal thoughts ?": [
+      "Have you ever had suicidal thoughts ?_encoded"
+    ],
+    "Financial Stress": [
+      "Financial Stress_encoded"
+    ],
+    "Family History of Mental Illness": [
+      "Family History of Mental Illness_encoded"
+    ]
+  },
+  "derived_to_parent": {
+    "Age_z": "Age",
+    "Academic Pressure_z": "Academic Pressure",
+    "Work Pressure_z": "Work Pressure",
+    "Study Satisfaction_z": "Study Satisfaction",
+    "Job Satisfaction_z": "Job Satisfaction",
+    "Work/Study Hours_z": "Work/Study Hours",
+    "Gender_encoded": "Gender",
+    "City_freq": "City",
+    "Profession_encoded": "Profession",
+    "Sleep Duration_encoded": "Sleep Duration",
+    "Sleep Duration_sentiment_confidence": "Sleep Duration",
+    "Degree_encoded": "Degree",
+    "Have you ever had suicidal thoughts ?_encoded": "Have you ever had suicidal thoughts ?",
+    "Financial Stress_encoded": "Financial Stress",
+    "Family History of Mental Illness_encoded": "Family History of Mental Illness"
+  },
+  "original_columns": [
+    "id",
+    "Gender",
+    "Age",
+    "City",
+    "Profession",
+    "Academic Pressure",
+    "Work Pressure",
+    "CGPA",
+    "Study Satisfaction",
+    "Job Satisfaction",
+    "Sleep Duration",
+    "Dietary Habits",
+    "Degree",
+    "Have you ever had suicidal thoughts ?",
+    "Work/Study Hours",
+    "Financial Stress",
+    "Family History of Mental Illness",
+    "Depression"
+  ],
+  "primary_target": "Depression",
+  "secondary_targets": [
+    "CGPA"
+  ],
+  "feature_columns": [
+    "Sleep Duration_sentiment_confidence",
+    "Age_z",
+    "Academic Pressure_z",
+    "Work Pressure_z",
+    "Study Satisfaction_z",
+    "Job Satisfaction_z",
+    "Work/Study Hours_z",
+    "Gender_encoded",
+    "City_freq",
+    "Profession_encoded",
+    "Sleep Duration_encoded",
+    "Degree_encoded",
+    "Have you ever had suicidal thoughts ?_encoded",
+    "Financial Stress_encoded",
+    "Family History of Mental Illness_encoded"
+  ]
+}

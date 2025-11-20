@@ -1,0 +1,9 @@
+{
+  "file": "Genshin Impact_cleaned.csv",
+  "primary": "score",
+  "secondary": [],
+  "type": "classification",
+  "title": "Product Review Analysis",
+  "auto_changes": [],
+  "needs_review": false
+}

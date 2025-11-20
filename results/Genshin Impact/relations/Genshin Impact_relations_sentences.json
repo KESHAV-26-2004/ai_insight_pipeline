@@ -1,0 +1,7 @@
+[
+  {
+    "short": "Score increases with Content (strong, spearman, effect=0.67, p=0).",
+    "long": "A strong relationship was found between Score and Content using spearman (effect=0.674, p=0, n=22255). This indicates that Score increases with Content.",
+    "action": "Consider prioritizing Score and Content for interventions or further testing."
+  }
+]

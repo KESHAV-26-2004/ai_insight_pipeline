@@ -1,0 +1,5 @@
+{
+  "summary_raw": "response:\nGenerateContentResponse(\n    done=True,\n    iterator=None,\n    result=protos.GenerateContentResponse({\n      \"candidates\": [\n        {\n          \"content\": {\n            \"role\": \"model\"\n          },\n          \"finish_reason\": \"MAX_TOKENS\",\n          \"index\": 0\n        }\n      ],\n      \"usage_metadata\": {\n        \"prompt_token_count\": 1042,\n        \"total_token_count\": 3089\n      },\n      \"model_version\": \"gemini-2.5-flash\"\n    }),\n)",
+  "summary": "response:\nGenerateContentResponse(\n    done=True,\n    iterator=None,\n    result=protos.GenerateContentResponse({\n      \"candidates\": [\n        {\n          \"content\": {\n            \"role\": \"model\"\n          },\n          \"finish_reason\": \"MAX_TOKENS\",\n          \"index\": 0\n        }\n      ],\n      \"usage_metadata\": {\n        \"prompt_token_count\": 1042,\n        \"total_token_count\": 3089\n      },\n      \"model_version\": \"gemini-2.5-flash\"\n    }),\n)",
+  "recommendations": []
+}

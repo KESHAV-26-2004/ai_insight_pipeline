@@ -1,0 +1,31 @@
+name: ai-insight-pipeline
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scipy
+  - statsmodels
+  - scikit-learn
+  - matplotlib
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.8      # If using GPU. Remove this line for CPU-only.
+  - pip:
+      - transformers
+      - datasets
+      - python-docx
+      - reportlab
+      - streamlit
+      - google-generativeai
+      - openai
+      - regex
+      - tqdm
+      - tokenizers
+      - PyYAML
+      - python-dateutil

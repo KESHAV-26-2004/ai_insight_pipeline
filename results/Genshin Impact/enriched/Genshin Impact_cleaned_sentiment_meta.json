@@ -1,0 +1,29 @@
+{
+  "file": "Genshin Impact_cleaned",
+  "candidates": [
+    {
+      "column": "content",
+      "avg_words": 21.054,
+      "unique_word_ratio": 0.2928659637123587,
+      "keyword_signal": true,
+      "non_null_count": 22255
+    }
+  ],
+  "analyzed": [
+    {
+      "column": "content",
+      "opinion_frac": 0.866,
+      "mean_conf": 0.9977939640952588,
+      "rows_processed": 22255,
+      "added_columns": [
+        "content_sentiment",
+        "content_sentiment_num",
+        "content_sentiment_confidence"
+      ]
+    }
+  ],
+  "skipped": [],
+  "existing_sentiment": [],
+  "derived_columns": [],
+  "runtime_sec": 133.99
+}

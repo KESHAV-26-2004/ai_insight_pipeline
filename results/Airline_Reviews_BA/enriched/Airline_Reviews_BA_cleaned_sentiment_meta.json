@@ -1,0 +1,87 @@
+{
+  "file": "Airline_Reviews_BA_cleaned",
+  "candidates": [
+    {
+      "column": "Customer Name",
+      "avg_words": 2.028,
+      "unique_word_ratio": 0.5956607495069034,
+      "keyword_signal": false,
+      "non_null_count": 3862
+    },
+    {
+      "column": "Review Head",
+      "avg_words": 4.594,
+      "unique_word_ratio": 0.27905964301262515,
+      "keyword_signal": true,
+      "non_null_count": 3862
+    },
+    {
+      "column": "Review",
+      "avg_words": 160.614,
+      "unique_word_ratio": 0.0759336047916122,
+      "keyword_signal": true,
+      "non_null_count": 3862
+    },
+    {
+      "column": "Date",
+      "avg_words": 3.0,
+      "unique_word_ratio": 0.03666666666666667,
+      "keyword_signal": false,
+      "non_null_count": 3862
+    },
+    {
+      "column": "Seat Type",
+      "avg_words": 2.0,
+      "unique_word_ratio": 0.005,
+      "keyword_signal": false,
+      "non_null_count": 3862
+    }
+  ],
+  "analyzed": [
+    {
+      "column": "Review Head",
+      "opinion_frac": 0.988,
+      "mean_conf": 0.996481266702235,
+      "rows_processed": 3862,
+      "added_columns": [
+        "Review Head_sentiment",
+        "Review Head_sentiment_num",
+        "Review Head_sentiment_confidence"
+      ]
+    },
+    {
+      "column": "Review",
+      "opinion_frac": 1.0,
+      "mean_conf": 0.9999897689819336,
+      "rows_processed": 3862,
+      "added_columns": [
+        "Review_sentiment",
+        "Review_sentiment_num",
+        "Review_sentiment_confidence"
+      ]
+    }
+  ],
+  "skipped": [
+    {
+      "Customer Name": {
+        "opinion_frac": 0.01,
+        "mean_conf": 0.9650780916213989
+      }
+    },
+    {
+      "Date": {
+        "opinion_frac": 0.0,
+        "mean_conf": 0
+      }
+    },
+    {
+      "Seat Type": {
+        "opinion_frac": 0.0,
+        "mean_conf": 0
+      }
+    }
+  ],
+  "existing_sentiment": [],
+  "derived_columns": [],
+  "runtime_sec": 78.52
+}

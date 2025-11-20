@@ -1,0 +1,6 @@
+{
+    "original_csv": "C:\\Users\\keshu\\CSET 346\\Project\\NLP\\Implement\\data\\csv\\student_depression_dataset.csv",
+    "dataset_name": "student_depression_dataset",
+    "generated_title": "Hospital Patient Record Analysis and Healthcare Performance Review",
+    "model_used": "./title_model"
+}

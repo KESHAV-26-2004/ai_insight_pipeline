@@ -1,0 +1,7 @@
+[
+  {
+    "short": "Review Rating increases with Review Text (strong, spearman, effect=0.81, p=0).",
+    "long": "A strong relationship was found between Review Rating and Review Text using spearman (effect=0.811, p=0, n=15000). This indicates that Review Rating increases with Review Text.",
+    "action": "Consider prioritizing Review Rating and Review Text for interventions or further testing."
+  }
+]
