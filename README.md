@@ -1,11 +1,3 @@
-Your current README is **very good technically**, but it is missing the **GitHub presentation style** that your other repos now follow (badges, demo section, stars, cleaner intro).
-We will **refine it without changing the technical content** — just make it **more professional and consistent with Shared Diary / Clinic / Portfolio repos**.
-
-Below is a **refined version of your README header + structure improvements**.
-You can replace the **top part** of your README with this.
-
----
-
 # 🧠 AI Insight Pipeline
 
 <p align="center">
@@ -377,20 +369,3 @@ Bennett University
 If you like this project, consider giving it a **star ⭐ on GitHub**.
 
 ---
-
-### One thing I recommend (very important for this repo)
-
-Add **screenshots of generated reports** like:
-
-```
-screenshots/
- ├── pipeline_flow.png
- ├── relations_plot.png
- ├── final_report.png
-```
-
-Because **AI repos look much more impressive with visuals**.
-
----
-
-If you want, I can also show you **3 small changes that will make this repo look like a real research-level GitHub project (seriously impressive for recruiters)**.
