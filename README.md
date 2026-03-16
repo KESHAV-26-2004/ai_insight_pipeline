@@ -1,313 +1,396 @@
-# 🚀 **AI Insight Pipeline**
+Your current README is **very good technically**, but it is missing the **GitHub presentation style** that your other repos now follow (badges, demo section, stars, cleaner intro).
+We will **refine it without changing the technical content** — just make it **more professional and consistent with Shared Diary / Clinic / Portfolio repos**.
 
-### *End-to-End Automated Data Analysis, Sentiment Detection, Feature Engineering, Insights & Reporting*
-
-The **AI Insight Pipeline** is a fully automated system that transforms any CSV dataset into a complete analytical report.
-It performs **cleaning, profiling, sentiment detection, feature engineering, correlation analysis, natural-language summaries, and generates professional PDF/DOCX reports** — all in one run.
-
-This project takes a dataset and guides the user through:
-
-1. Selecting **Primary Target**
-2. Selecting **Secondary Target(s)** (optional, up to 2)
-3. Choosing **Task Type** (Classification or Regression)
-4. Running a full automated pipeline
-
-> **Goal:** Make dataset analysis automatic, intelligent, and production-ready — no manual coding required.
+Below is a **refined version of your README header + structure improvements**.
+You can replace the **top part** of your README with this.
 
 ---
 
-# 📌 **✨ Features Overview**
+# 🧠 AI Insight Pipeline
 
-### 🔹 1. **CSV Profiling**
+<p align="center">
+End-to-End Automated Data Analysis, Sentiment Detection, Feature Engineering, Insights & Report Generation
+</p>
 
-* Reads dataset safely with encoding detection
-* Creates full JSON profile: data types, sample values, unique counts, missing values
-* Detects numeric, categorical, text, and datetime columns
+<p align="center">
+
+![Python](https://img.shields.io/badge/Language-Python-blue)
+![Pandas](https://img.shields.io/badge/Data-Pandas-orange)
+![PyTorch](https://img.shields.io/badge/AI-PyTorch-red)
+![Transformers](https://img.shields.io/badge/NLP-Transformers-yellow)
+![Gemini](https://img.shields.io/badge/LLM-Gemini-purple)
+![Architecture](https://img.shields.io/badge/Architecture-AI%20Pipeline-green)
+
+</p>
+
+<p align="center">
+
+![GitHub stars](https://img.shields.io/github/stars/KESHAV-26-2004/ai_insight_pipeline)
+![GitHub forks](https://img.shields.io/github/forks/KESHAV-26-2004/ai_insight_pipeline)
+
+</p>
 
 ---
 
-### 🔹 2. **Dataset Title Generation (Fine-Tuned GPT-2 Model)**
+# 📖 Project Overview
 
-* Summarizes CSV structure
-* Detects dataset domain
-* Generates a professional dataset title using a fine-tuned GPT-2 model
-* Saves title as JSON under `results/<dataset>/title/`
+The **AI Insight Pipeline** is a fully automated system that transforms any **CSV dataset into a complete analytical report**.
+
+The pipeline performs the entire workflow automatically:
+
+* dataset profiling
+* cleaning & validation
+* sentiment detection
+* feature engineering
+* statistical relation analysis
+* AI-generated insights
+* professional PDF / DOCX reporting
+
+All steps run in a **single automated pipeline**, requiring only minimal user input.
+
+The system asks the user to provide:
+
+1️⃣ **Primary Target Column**
+2️⃣ **Secondary Target(s)** *(optional, up to 2)*
+3️⃣ **Task Type** *(classification or regression)*
+
+After this, the entire analysis runs automatically.
+
+**Goal:**
+Create a system that makes **dataset analysis automatic, intelligent, and production-ready** without manual coding.
 
 ---
 
-### 🔹 3. **Clean & Validate**
+# ⚙️ Pipeline Architecture
+
+<p align="center">
+<img src="docs/pipeline_architecture.png" width="900">
+</p>
+
+The AI Insight Pipeline processes datasets through a multi-stage automated workflow including profiling, cleaning, sentiment analysis, feature engineering, statistical relation analysis, LLM-powered summarization, and final report generation.
+
+---
+
+# ✨ Features Overview
+
+## 🔹 1. CSV Profiling
+
+* Safe CSV loading with encoding detection
+* Generates JSON dataset profile
+* Detects column types automatically:
+
+- numeric
+- categorical
+- text
+- datetime
+
+---
+
+## 🔹 2. Dataset Title Generation (Fine-Tuned GPT-2)
+
+The pipeline generates a **professional dataset title automatically**.
+
+Features:
+
+* dataset structure summarization
+* domain inference
+* fine-tuned GPT-2 model
+* saved under
+
+```
+results/<dataset>/title/
+```
+
+---
+
+## 🔹 3. Clean & Validate
 
 User provides:
 
 * **Primary Target**
-* **Secondary Targets** (0–2 optional)
-* **Task Type**: `classification` or `regression`
+* **Secondary Targets (optional)**
+* **Task Type**
 
-Pipeline then:
+The pipeline then performs:
 
-* Cleans invalid/unwanted columns
-* Normalizes datetime formats
-* Fixes inconsistent data types
-* Automatically collapses giant categorical classes
-* Saves cleaned CSV + target metadata
-
----
-
-### 🔹 4. **Sentiment Detection**
-
-The pipeline detects sentiment columns in two ways:
-
-#### ✔ Case A — **Existing Sentiment Column Found**
-
-If dataset contains columns like `positive/negative/neutral`, pipeline:
-
-* Converts them to numeric (`0=neg`, `1=neu`, `2=pos`)
-* Saves metadata
-* Adds them as useful secondary features
-
-#### ✔ Case B — **No Sentiment → Use Custom Fine-Tuned BERT Models**
-
-Runs two in-house models:
-
-* **Opinion Detector** (detects if text contains opinion)
-* **DistilBERT Sentiment Model** (positive/neutral/negative)
-
-✓ Auto-batching
-✓ GPU acceleration
-✓ Smart text cleaning
-✓ Caching for speed
-
-Adds:
-
-* `<column>_sentiment`
-* `<column>_sentiment_num`
-* `<column>_sentiment_confidence`
-
----
-
-### 🔹 5. **Feature Engineering**
-
-Automatically applies:
-
-* Numeric scaling (z-score)
-* Label encoding / frequency encoding
-* Text metrics (word count, unique ratio, emoji, URLs, uppercase ratio)
-* Datetime expansion (year/month/day/hour/weekday)
-* Aggregated sentiment features
-* Row-level meta features
+* datatype correction
+* invalid column removal
+* datetime normalization
+* categorical compression
 
 Outputs:
-
-* `<dataset>_features.csv`
-* `<dataset>_encoders.json` metadata
-
----
-
-### 🔹 6. **Relation Analysis (Parent-Level Correlations)**
-
-The Relation Analyzer:
-
-* Maps engineered features back to original “parent” columns
-* Picks the **best representative feature** per parent column
-* Computes:
-
-  * Pearson/Spearman
-  * ANOVA Eta²
-  * Chi-square / Cramer’s V
-* Applies strict quality filters:
-
-  * effect size ≥ 0.15
-  * corrected p-value ≤ 0.05
-  * sample size thresholds
-* Selects **3–4 best relations**
-* Generates **visual plots**
-* Produces natural-language explanation sentences
-
-Outputs:
-
-* `relations.json`
-* `relations_sentences.json`
-* Plot images in `results/<dataset>/plots/`
-
----
-
-### 🔹 7. **Gemini AI Summary Generation**
-
-Using Gemini 2.5 Flash:
-
-* Builds full dataset prompt
-* Generates:
-
-  * Final summary (6–10 sentences)
-  * 5–12 actionable recommendations
-* Cleans output
-* Saves:
-
-  * JSON
-  * Markdown report
-
----
-
-### 🔹 8. **Final Report Generator → PDF + DOCX**
-
-Creates three polished formats:
-
-* **Markdown**
-* **DOCX**
-* **PDF (with clean layout)**
-
-Report includes:
-
-1. Dataset Title
-2. Overview
-3. Column details with samples
-4. Sentiment distribution (pie chart)
-5. Key drivers & correlations (with plots)
-6. Final AI summary
-7. Recommendations
-
----
-
-# 📂 **Folder Structure**
 
 ```
-root/
-│
-├── pipeline/
-│   ├── title_generator.py
-│   ├── run_pipeline.py
-│   ├── relation_analyzer.py
-│   ├── ingest_and_profile.py
-│   ├── detect_and_annotate_csv.py
-│   ├── feature_engineer.py
-│   ├── final_report.py
-│   └── gemini_refiner.py
-│
-├── Sentiment/
-│   ├── opinion_detector_model/ (ignored)
-│   ├── sentiment_model/ (ignored)
-│   └── datasets & training notebooks
-│
-│
-├── title/
-│   ├── model/ (fine-tuned GPT-2) (ignored)
-│   ├── data/ (ignored)
-│   └── training notebook
-│
-├── data/all_csv
-│   └── (user CSV files – ignored)
-│
-├── results/
-│   └── <dataset>/
-│       ├── profiles/
-│       ├── cleaned/
-│       ├── enriched/
-│       ├── features/
-│       ├── relations/
-│       ├── gemini/
-│       └── report/
-│
-├── app.py (optional UI)
-├── app.ipynb
-├── README.md
-└── requirements.txt
+cleaned_dataset.csv
+targets.json
 ```
 
 ---
 
-# 🧪 **How to Run the Pipeline**
+## 🔹 4. Sentiment Detection
 
-### Step 1 — Place your CSV inside:
+The pipeline supports **two sentiment modes**.
+
+### ✔ Case A — Existing Sentiment Column
+
+If dataset already contains sentiment labels:
+
+```
+positive
+neutral
+negative
+```
+
+They are automatically converted into numeric format.
+
+---
+
+### ✔ Case B — No Sentiment → Use AI Models
+
+The pipeline runs two internal models:
+
+**Opinion Detector**
+Detects whether text expresses an opinion.
+
+**DistilBERT Sentiment Model**
+
+Classifies text as:
+
+* positive
+* neutral
+* negative
+
+Features:
+
+* GPU acceleration
+* batching
+* caching
+* automatic preprocessing
+
+Additional columns generated:
+
+```
+<column>_sentiment
+<column>_sentiment_num
+<column>_sentiment_confidence
+```
+
+---
+
+## 🔹 5. Feature Engineering
+
+Automatically generates advanced features including:
+
+### Numeric
+
+* z-score normalization
+
+### Categorical
+
+* label encoding
+* frequency encoding
+
+### Text
+
+* word count
+* emoji detection
+* URL detection
+* uppercase ratio
+
+### Datetime
+
+* year
+* month
+* weekday
+* hour
+
+Outputs:
+
+```
+<dataset>_features.csv
+encoders.json
+```
+
+---
+
+## 🔹 6. Relation Analyzer
+
+The system detects **important statistical relationships** between features.
+
+Methods used:
+
+* Pearson correlation
+* Spearman correlation
+* ANOVA Eta²
+* Chi-Square / Cramer’s V
+
+Quality filters:
+
+```
+effect size ≥ 0.15
+p-value ≤ 0.05
+minimum sample thresholds
+```
+
+Results include:
+
+* best relations
+* visual plots
+* explanation sentences
+
+Saved as:
+
+```
+relations.json
+relations_sentences.json
+```
+
+---
+
+## 🔹 7. Gemini AI Summary
+
+The pipeline uses **Gemini 2.5 Flash** to generate:
+
+* final dataset summary
+* actionable recommendations
+
+Outputs saved as:
+
+```
+summary.json
+summary.md
+```
+
+---
+
+## 🔹 8. Final Report Generator
+
+Automatically produces professional reports:
+
+* Markdown
+* DOCX
+* PDF
+
+Reports include:
+
+1️⃣ dataset title
+2️⃣ dataset overview
+3️⃣ column analysis
+4️⃣ sentiment distribution
+5️⃣ key relations with plots
+6️⃣ AI-generated insights
+7️⃣ recommendations
+
+---
+
+# 📂 Folder Structure
+
+```
+pipeline/
+ ├── ingest_and_profile.py
+ ├── title_generator.py
+ ├── detect_and_annotate_csv.py
+ ├── feature_engineer.py
+ ├── relation_analyzer.py
+ ├── gemini_refiner.py
+ ├── final_report.py
+ └── run_pipeline.py
+```
+
+```
+results/<dataset>/
+ ├── profiles
+ ├── cleaned
+ ├── enriched
+ ├── features
+ ├── relations
+ ├── gemini
+ └── report
+```
+
+---
+
+# 🚀 Running the Pipeline
+
+### 1️⃣ Place CSV inside
 
 ```
 data/all_csv
 ```
 
-### Step 2 — Run the pipeline:
+---
 
-```bash
+### 2️⃣ Run
+
+```
 app.ipynb
 ```
 
-### The program will ask you:
-
 ---
 
-## **1. Primary Target (required)**
+### 3️⃣ Enter configuration
 
-Choose the main outcome column.
 Example:
 
 ```
-Enter primary target: rating
+Primary Target: rating
+Secondary Target: sentiment
+Task Type: classification
 ```
 
 ---
 
-## **2. Secondary Targets (optional, max 2)**
+### 4️⃣ Pipeline runs automatically
 
-```
-Enter secondary targets (comma separated, blank for none):
-sentiment, product_category
-```
-
----
-
-## **3. Task Type**
-
-Classification or regression:
-
-```
-Enter task type (classification/regression): classification
-```
-
----
-
-### 🚀 After this — everything else is automatic.
-
-Pipeline output will be created inside:
+Outputs appear in:
 
 ```
 results/<dataset>/
 ```
 
-Including:
-
-* Title JSON
-* Cleaned dataset
-* Enriched sentiment CSV
-* Feature-engineered CSV
-* Correlation plots
-* AI summary
-* Final **PDF + DOCX + MD reports**
-
 ---
 
-# 📦 **Installation**
+# 📦 Installation
 
-```bash
+```
 pip install -r requirements.txt
 ```
 
-Make sure to set:
+Set API key:
 
 ```
-export GOOGLE_API_KEY="your key"
+export GOOGLE_API_KEY="your_key"
 ```
 
 ---
 
-# ❤️ **Contributions**
+# 👨‍💻 Author
 
-Feel free to submit PRs for:
-
-* new sentiment models
-* additional relation metrics
-* UI improvements
-* extended report templates
+**Keshav**
+B.Tech Computer Science & Engineering
+Bennett University
 
 ---
 
-# 🏁 **License**
+# ⭐ Support
 
-MIT License
+If you like this project, consider giving it a **star ⭐ on GitHub**.
+
+---
+
+### One thing I recommend (very important for this repo)
+
+Add **screenshots of generated reports** like:
+
+```
+screenshots/
+ ├── pipeline_flow.png
+ ├── relations_plot.png
+ ├── final_report.png
+```
+
+Because **AI repos look much more impressive with visuals**.
+
+---
+
+If you want, I can also show you **3 small changes that will make this repo look like a real research-level GitHub project (seriously impressive for recruiters)**.
